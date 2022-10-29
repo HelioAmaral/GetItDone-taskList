@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Orange-pantone: #A33C00;
+    --Wheat: rgb(225, 202, 150);
+    --Sage: #aca885;
+    --Raw-amber: #4B4630;
+    --Pine-tree: #2F2F23;
+    --font-color: #01CB84;
+}
+
+body, html{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    background-color: var(--Pine-tree);
+}
+
+.container {
+    width: 50%;
+    background-color: var(--sage);
+    margin: 6rem auto;
+    padding: 1rem 1rem 3rem 1rem;
+    box-shadow: rgb(225, 202, 150, .56) 0px 22px 70px 4px;
+    border-radius: 10px;
+}
+
+
+/*HEADER*/
+.header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: transparent;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header .logo{
+    align-self: center;
+    margin-left: 10rem;
+    font-size: 3rem;
+    color: var(--Orange-pantone);
+    line-height: 2rem;
+    text-shadow: 0 10px 8px #c4b59d,0 2px 1px #fff;
+    letter-spacing: 2px;
+}
+
+.today {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-self: center;
+    color:var(--font-color);
+}
+
+.month_year {
+    display: grid;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 2rem;
+    align-self: center;
+    justify-content: right;
+    margin-left: 1.5rem;
+}
+
+/*CREATE TASK CONTAINER*/
+
+.form-container h3 {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.addForm {
+    
+    width: 80%;
+    margin: auto;
+}
+
+.addForm .newTask {
+    width: 70%;
+    padding: .5rem;
+    margin: 1rem .3rem;
+    background-color: #4B4630;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+}
+
+.addForm .newDate {
+    padding: .5rem;
+    border: none;
+    background-color: #4B4630;
+    color: var(--font-color);
+    font-size: 1rem;
+}
+
+.addForm .buttons {
+    width: 55%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.addTask,
+.deleteTodo {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 10rem;
+    background-color: var(--Raw-amber);
+    color: var(--font-color);
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+    box-shadow: 0 6px 0 var(--Raw-amber), 0 5px 15px -4px rgb(70, 69, 69);
+    transition: all .3s ease-in-out;
+}
+
+.addTask:hover,
+.deleteTodo:hover {
+    cursor: pointer;
+    color: var(--Orange-pantone);
+    background-color: var(--Sage);
+    
+}
+
+.addTask:active,
+.deleteTodo:active {
+    transform: scale(.95);
+}
+
+
+
+/*TASKS LIST*/
+
+.task_list {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--Middle-grey);
+}
+
+.listItem {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    padding: .6rem;
+}
+
+.listItem p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.listItem span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--Nickel);
+    border: 2px solid var(--Wheat);
+    align-self: center;
+}
+
+.listItem.complete span {
+    background-color: rgb(7, 184, 31);
+}
+
+.btnContainer {
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.addBtn {
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.deleteBtn {
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Get It Done</title>
+  </head>
+  <body>
+
+
+
+    <!--HEADER-->
+    <div class="container">
+      <div class="header">
+        <div class="today">
+          <span class="date" id="date"></span>
+          <span class="month_year">
+            <span class="month" id="month">Jan</span>
+            <span class="year" id="year">2022</span>
+          </span>
+        </div>
+        <h2 class="logo">Get It Done!</h2>
+      </div>
+
+
+
+      <!--CREATE TASK FORM-->
+      <div class="form-container" id="form-container">
+        <h3>Create a New Task</h3>
+        <form class="addForm" id="addForm">
+          <input type="text" class="newTask" id="newTask" required placeholder="What do I need to get done..." />
+          <input type="date" class="newDate" id="newDate" required />
+          <div class="buttons">
+            <button type="submit" class="addTask" id="addTask">Add Task</button>
+            <button type="button" class="deleteTodo" id="deleteTodo">Delete</button>
+          </div>
+        </form>
+      </div>
+
+
+      <!--TASK LIST-->
+      <div class="task_list" id="taskList">
+        <!--
+        <div class="listItem">
+          <p>
+            Title<br />
+            <small>23 mar 2022</small>
+          </p>
+          <span></span>
+        </div>
+        <div class="listItem complete">
+          <p>
+            completed<br />
+            <small>24 mar 2022</small>
+          </p>
+          <span></span>
+        </div>
+        -->
+      </div>
+
+
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
